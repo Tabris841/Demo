@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Bedrooms</title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="stylesheets/demo_css.css">
+    <script src="javascripts/demoscript.js"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+<header>
+    <div class="container header_div">
+        <div id="logo">
+        </div>
+        <div id="menu">
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="#"><span id="dropDownArrow">Furniture</span></a>
+
+                    <ul id="subMenuHeader">
+                        <li><a href="Kitchens.html">Kitchens</a></li>
+                        <li><a href="Dining%20rooms.html">Dining rooms</a></li>
+                        <li><a href="Living%20rooms.html">Living rooms</a></li>
+                        <li><a href="Bedrooms.html">Bedrooms</a></li>
+                        <li><a href="Lockers.html">Lockers</a></li>
+                        <li><a href="Kids%20rooms.html">Kids rooms</a></li>
+                    </ul>
+
+                </li>
+                <li><a href="Projects.html">Projects</a></li>
+                <li><a href="Become%20client.html">Become client</a></li>
+                <li><a href="Contacts.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+<main>
+    <div id="mainDiv">
+        <section>
+            <div class="container" id="content">
+                <p>
+
+                <h1>Contacts</h1>
+
+                <h3>Make a quick and and easy inquiry</h3>
+
+                <p>
+                    using the form below. The more detailed you are, the more specific will and our response.
+                    Describe your idea, but do not forget to mark the reason you want to do this step.
+                    If we know the root cause of the order is possible together to find an alternative optimal
+                    solution.
+                </p>
+                <hr>
+                <form action="newnote" method="post" role="form">
+                    <div class="form-froup">
+                        <div class="col-xs-8">
+                            <label for="name">Name<span class="labelSpan">(*required)</span> :</label>
+                            <input type="text" id="name" class="form-control"/>
+                        </div>
+                        <div class="col-xs-8">
+                            <label for="phone">Phone number<span class="labelSpan">(*required)</span> :</label>
+                            <input type="tel" id="phone" class="form-control">
+                        </div>
+                        <div class="col-xs-8">
+                            <label for="email">Email :</label>
+                            <input type="email" id="email" class="form-control">
+                        </div>
+                        <div class="col-xs-8">
+                            <label for="category">Choose category :</label>
+                            <select name="choose category" id="category" class="form-control">
+                                <option value="interior doors">Interior doors</option>
+                                <option value="indoor furniture">Indoor furniture</option>
+                                <option value="magazine and office furniture">Magazine and office furniture</option>
+                                <option value="sliding doors">Sliding doors</option>
+                                <option value="specific situations">specific situations</option>
+                                <option value="transport boxes">Transport boxes</option>
+                                <option value="dental office">Dental office</option>
+                            </select>
+                        </div>
+                        <div class="col-xs-8">
+                            <label for="budget">Planned budget :</label>
+                            <select name="planned budget" id="budget" class="form-control">
+                                <option>to 1000EU</option>
+                                <option>1000 - 5000EU</option>
+                                <option>5000 - 10000EU</option>
+                                <option>over 10000EU</option>
+                            </select><br>
+                        </div>
+                        <div class="col-xs-8">
+                            <label>Select the level of urgency of the order :</label>
+
+                            <div class="radio">
+                                <label><input type="radio" name="urgency" value="for yesterday">For
+                                    yesterday</label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="urgency" value="normal term"/>Normal term</label>
+                            </div>
+                            <div class="radio">
+                                <label><input type="radio" name="urgency" value="for yesterday"/>I am not in a
+                                    hurry</label><br>
+
+                            </div>
+                        </div>
+                        <div class="col-xs-10">
+                            <label for="notes">Additional notes<span
+                                    class="labelSpan">(*required)</span> :</label><br/>
+                            <textarea name="notes" id="notes" rows="7" class="form-control"></textarea><br>
+                        </div>
+                        <div class="col-xs-10">
+                            <input type="submit" value="Submit" class="btn btn-success">
+                        </div>
+                        <div class="clearFix"></div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <aside>
+            <div id="asideDiv">
+                <div class="asideAdress">
+                    <p><span class="glyphicon glyphicon-home"></span> Company address</p>
+
+                    <p><span class="glyphicon glyphicon-phone"></span> 0888 237951</p>
+
+                    <p><span class="glyphicon glyphicon-phone"></span> 0887 810132</p>
+
+                    <p><span class="glyphicon glyphicon-envelope"></span> Email address</p>
+
+                </div>
+                <div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2933.5087234561424!2d23.291056499999993!3d42.6717651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40aa84e7f678f693%3A0x5b398aaecda46547!2z0JHRitC70LPQsNGA0LrQuCDQn9C-0YnQuA!5e0!3m2!1sen!2sbg!4v1436028664561"
+                            frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </aside>
+        <div id="partnersDiv">
+            <div id="partnersInner">
+                <img src="images/partners/aeg_logo.jpg" alt="" class="firstImg"/>
+                <img src="images/partners/ariston_logo.jpg" alt=""/>
+                <img src="images/partners/BLANCO.jpg" alt=""/>
+                <img src="images/partners/blum.jpg" alt=""/>
+                <img src="images/partners/bosch.jpg" alt=""/>
+                <img src="images/partners/Electrolux.jpg" alt=""/>
+                <img src="images/partners/gorenje.jpg" alt=""/>
+                <img src="images/partners/Haefele.jpg" alt=""/>
+                <img src="images/partners/Leks_Group.jpg" alt=""/>
+                <img src="images/partners/MATRAX.jpg" alt=""/>
+                <img src="images/partners/Salex.jpg" alt=""/>
+                <img src="images/partners/aeg_logo.jpg" alt=""/>
+                <img src="images/partners/ariston_logo.jpg" alt=""/>
+                <img src="images/partners/BLANCO.jpg" alt=""/>
+                <img src="images/partners/blum.jpg" alt=""/>
+                <img src="images/partners/bosch.jpg" alt=""/>
+                <img src="images/partners/Electrolux.jpg" alt=""/>
+                <img src="images/partners/gorenje.jpg" alt=""/>
+                <img src="images/partners/Haefele.jpg" alt=""/>
+                <img src="images/partners/Leks_Group.jpg" alt=""/>
+                <img src="images/partners/MATRAX.jpg" alt=""/>
+                <img src="images/partners/Salex.jpg" alt=""/>
+            </div>
+        </div>
+    </div>
+    <div class="clearFix"></div>
+    <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span
+                            aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Image preview</h4>
+                </div>
+                <div class="modal-body">
+                    <img src="" id="imagepreview" style="width: 560px; height: 480px;">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer>
+    <div class="container footer_div">
+        <div class="footer_bottom">
+            <div>
+                <div><img src="images/home.png" alt="home"/></div>
+                <div>City: Sofia <br>
+                    Company adress
+                </div>
+            </div>
+            <div class="clearFix"></div>
+            <div>
+                <div><img src="images/tel.png" alt="phone"/></div>
+                <div>0888 237951 <br>
+                    0887 810132
+                </div>
+            </div>
+            <div class="clearFix"></div>
+            <div>
+                <div><img src="images/email.png" alt="email"/></div>
+                <div>e-mail adress: <br>
+                    <a href="#">exaple@mail.com</a></div>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div>
+                <div><a href="#"><span class="facebook"></span></a></div>
+            </div>
+            <div>
+                <div><a href="#"><span class="tweeter"></span></a></div>
+            </div>
+            <div>
+                <div><a href="#"><span class="google"></span></a></div>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div class="footer_menu">
+                <ul>
+                    <li><a href="Kitchens.html">Kitchens</a></li>
+                    <li><a href="Living%20rooms.html">Living rooms</a></li>
+                    <li><a href="Dining%20rooms.html">Dining rooms</a></li>
+                    <li><a href="Bedrooms.html">Bedrooms</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div class="footerPargh">
+                <p>
+                    The activity of Company name is focused on
+                    <strong>designing and manufacturing furniture for the entire home furnishing</strong>.
+                    The company has a team of skilled designesr and our own production base.
+                </p>
+            </div>
+        </div>
+        <div class="clearFix"></div>
+        <div class="footerEnd">
+            <p>
+                <span id="footerFirstSpan">Furniture made on order and invidual project from Company name</span>
+                <span id="footerSecondSpan"> © 2015. All rights reserved</span>
+                <span>Created by <mark>Anton Ivanov Todorov</mark></span>
+            </p>
+        </div>
+    </div>
+</footer>
+<div><a href="#" id="toTheTop"></a></div>
+</body>
+</html>
