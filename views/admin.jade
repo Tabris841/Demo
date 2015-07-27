@@ -1,0 +1,100 @@
+doctype html
+html
+    head(lang="en")
+        meta(charset='UTF-8')
+        title= title
+        link(rel='stylesheet', href='/stylesheets/style.css')
+        link(rel='stylesheet', href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css')
+        script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
+        script(src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js')
+    body
+        div.container
+            div.text-center
+                h1
+                    | Inquiry
+                p.lead
+                    | This is a list of the last dozen inquiries that were entered in.
+            div.container
+                form(action='admin' method='post')
+                    div.row.clearfix
+                        div.col-md-3.column
+                            select#category.form-control(name='category')
+                                option(value='')
+                                    | (Show All Categories)
+                                option(value='interior doors')
+                                    | Interrior doors
+                                option(value='indoor furniture')
+                                    | Indoor furniture
+                                option(value='magazine and office furniture')
+                                    | Magazine and office furniture
+                                option(value='sliding doors')
+                                    | Sliding doors
+                                option(value='specific situations')
+                                    | Specific situations
+                                option(value='transport boxes')
+                                    | Transport boxes
+                                option(value='dental office')
+                                    | Dental office
+                        div.col-md-3.column
+                            select#urgency.form-control(name='urgency')
+                                option(value='')
+                                    | (Show All Urgencies)
+                                option(value='for yesterday')
+                                    | For Yesterday
+                                option(value='normal term')
+                                    | Normal term
+                                option(value='not in a hurry')
+                                    | Not in a hurry
+                        div.col-md-3.column
+                            select#budget.form-control(name='budget')
+                                option(value='')
+                                    | (Show all Budgets)
+                                option(value='to 1000EU')
+                                    | to 1000EU
+                                option(value='1000 - 5000EU')
+                                    | 1000 - 5000EU
+                                option(value='5000 - 10000EU')
+                                    | 5000 - 10000EU
+                                option(value='over 10000EU')
+                                    | over 10000EU
+                        div.col-md-3.column
+                            button#btnFilterUrgency.btn.btn-primary(name='btnFilterUrgency' type='sumbit')
+                                | Filter
+                br
+                form(action='admin1' method='post')
+                    div.row.clearfix
+                        div.col-md-9.column
+                            select#name.form-control(name='name')
+                                option(value='')
+                                    | Select inquiry by name to delete
+                                each note in notes
+                                    option(value='#{note.name}')
+                                        | #{note.name}
+                        div.col-md-3.column
+                            button#btnRemove.btn.btn-danger(name='btnRemove' type='submit')
+                                | Delete inquiry
+            br
+            div
+                div.container
+                    div.col-md-12.column.list-group
+                        each note in notes
+                            div.list-group-item
+                                div
+                                    | <b>Name:</b> #{note.name}
+                                div
+                                    | <b>Phone:</b> #{note.phoneNumber}
+                                div
+                                    | <b>Email:</b> #{note.email}
+                                div
+                                    | <b>Category:</b> #{note.category}
+                                div
+                                    | <b>Budget:</b> #{note.budget}
+                                div
+                                    | <b>Urgency:</b> #{note.urgency}
+                                div
+                                    | <b>Notes:</b> #{note.notes}
+                                div
+                                    | <b>Date:</b> #{note.createdOn}
+
+
+

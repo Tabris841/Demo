@@ -7,14 +7,28 @@ router.get('/', function (req, res, next) {
     res.sendfile('public/home.html');
 });
 
-/*Get New Note page. */
-router.get('../public/Contacts.html', function (req, res) {
-    return demoCtrl.getNote(req.res)
+/*Post filter inquiries - admin */
+router.post('/admin', function (req, res) {
+    return demoCtrl.filterByUrgency(req, res);
 });
 
-/*Post New Note page. */
-router.post('../public/Contacts.html', function (req, res) {
+/*Remove inquiry - admin */
+router.post('/admin1', function (req, res) {
+    return demoCtrl.remove(req, res);
+});
+
+/*Get New Inquiry page. */
+router.get('/Contacts.html', function (req, res) {
+    return demoCtrl.getNote(req, res);
+});
+
+/*Post New Inquiry page. */
+router.post('/Contacts.html', function (req, res) {
     return demoCtrl.create(req, res);
 });
+
+router.get('/admin', function (req, res) {
+    return demoCtrl.list(req, res);
+})
 
 module.exports = router;
