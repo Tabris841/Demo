@@ -12,11 +12,6 @@ router.post('/admin', function (req, res) {
     return demoCtrl.filterByUrgency(req, res);
 });
 
-/*Remove inquiry - admin */
-router.post('/admin1', function (req, res) {
-    return demoCtrl.remove(req, res);
-});
-
 /*Get New Inquiry page. */
 router.get('/Contacts.html', function (req, res) {
     return demoCtrl.getNote(req, res);
@@ -29,6 +24,6 @@ router.post('/Contacts.html', function (req, res) {
 
 router.get('/admin', function (req, res) {
     return demoCtrl.list(req, res);
-})
+});
 
 module.exports = router;

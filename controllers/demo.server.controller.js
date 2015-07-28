@@ -9,23 +9,9 @@ exports.list = function (req, res) {
         })
 };
 
-exports.remove = function (req, res) {
-    var query = Demo.find();
-    var filter = req.body.name;
-
-    query.sort({createdOn: 'desc'});
-
-    if (filter.length > 0) {
-        query.remove({name: filter})
-    }
-
-    query.exec(function (req, results) {
-        res.render('admin', {title: 'Admin', notes: results})
-    })
-};
-
 exports.filterByUrgency = function (req, res) {
     var query = Demo.find();
+    var query1 = Demo.find();
     var filterU = req.body.urgency;
     var filterB = req.body.budget;
     var filterC = req.body.category;
@@ -46,9 +32,15 @@ exports.filterByUrgency = function (req, res) {
         query.where({category: filterC})
     }
 
+    if (filter.length > 0) {
+        query1.findOneAndRemove({name: filter}, function (err, user){
+            if(err) throw err;
+        });
+    }
+
     query.exec(function (req, results) {
         res.render('admin', {title: 'Admin', notes: results})
-    })
+    });
 };
 
 exports.create = function (req, res) {

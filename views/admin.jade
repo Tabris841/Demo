@@ -11,9 +11,9 @@ html
         div.container
             div.text-center
                 h1
-                    | Inquiry
+                    | Admin panel
                 p.lead
-                    | This is a list of the last dozen inquiries that were entered in.
+                    | This is a list of the inquiries that were entered in.
             div.container
                 form(action='admin' method='post')
                     div.row.clearfix
@@ -60,9 +60,8 @@ html
                         div.col-md-3.column
                             button#btnFilterUrgency.btn.btn-primary(name='btnFilterUrgency' type='sumbit')
                                 | Filter
-                br
-                form(action='admin1' method='post')
-                    div.row.clearfix
+                        br
+                        br
                         div.col-md-9.column
                             select#name.form-control(name='name')
                                 option(value='')
