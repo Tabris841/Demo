@@ -1,4 +1,5 @@
 var Demo = require('../models/inquiry.server.model.js');
+var User = require ('../models/user');
 
 exports.list = function (req, res) {
     var query = Demo.find();
@@ -57,10 +58,12 @@ exports.create = function (req, res) {
     entry.save();
 
     //redirect to home page...
-    res.redirect(301, '/Contacts.html');
+    res.redirect(301, '/Contact.html');
 
 };
 
 exports.getNote = function (req, res) {
     res.render('/Contacts');
 };
+
+

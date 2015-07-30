@@ -1,8 +1,18 @@
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
+}
+
+#customButton {
+  background-color: transparent;
+  color: #9d9d9d;
+  border:none;
+  margin-top: 8px;
+}
+
+#customButton:hover {
+  color: white;
 }

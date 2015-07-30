@@ -147,6 +147,11 @@ main .container #myCarousel .carousel-inner div img {
     text-align: justify;
 }
 
+#content #successMsg {
+    padding-left: 100px;
+    color: #00aeef;
+}
+
 #asideDiv {
     margin-left: 15px;
     width: 310px;

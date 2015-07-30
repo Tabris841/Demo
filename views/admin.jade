@@ -8,6 +8,28 @@ html
         script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js')
         script(src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js')
     body
+        nav.nav-bar.navbar-inverse
+            div.container-fluid
+                div.navbar-header
+                    span.navbar-brand
+                        | Admin panel
+                div
+                    ul.nav.navbar-nav
+                        li.disabled
+                            a(href="#")
+                                | Home
+                        li.active
+                            a(href="/admin")
+                                | Database
+                        li
+                            a(href="/signup")
+                                | Add user
+                    ul.nav.navbar-nav.navbar-right
+                        li
+                            form(action='/logout' method='get')
+                                button#customButton.btn.btn-default(type='sumbit')
+                                    span.glyphicon.glyphicon-log-in
+                                    | &nbsp;Logout
         div.container
             div.text-center
                 h1
